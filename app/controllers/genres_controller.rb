@@ -10,7 +10,8 @@ class GenresController < ApplicationController
 
   def show
     @genre = Genre.find(params[:id])
-    @movies = GenreMovie.all
+    @movies = GenreMovie.where(genre_id: @genre.id)
+    #@movie = Movie.find(params[:movie_id])
     #binding.pry
   end
 
