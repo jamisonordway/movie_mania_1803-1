@@ -31,6 +31,9 @@ context 'Admin user' do
 
       click_on "Create Genre"
       expect(current_path).to eq(genres_path)
+      expect(page).to have_content(genre_1.name)
+      expect(page).to have_content(genre_2.name)
+      expect(page).to have_content('Drama')
     end
   end
 end
