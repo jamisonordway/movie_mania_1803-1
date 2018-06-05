@@ -8,6 +8,12 @@ class GenresController < ApplicationController
     @genre = Genre.new
   end
 
+  def show
+    @genre = Genre.find(params[:id])
+    @movies = GenreMovie.all
+    #binding.pry
+  end
+
   def create
     @genre = Genre.create(genre_params)
     if @genre.save
