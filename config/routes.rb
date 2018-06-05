@@ -4,8 +4,8 @@ Rails.application.routes.draw do
  resources :directors, only: [:new, :create, :index]
 
  scope :admin, module: :admin, as: :admin do
-	 resources :genres
+	 resources :genres, only: [:new, :create, :index, :update, :destroy, :post]
 	end
 
- resources :genres, only: [:index, :show]
+ resources :genres
 end

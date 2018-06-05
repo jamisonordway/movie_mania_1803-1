@@ -28,8 +28,8 @@ context 'Admin user' do
       click_on "Add a Genre"
       expect(current_path).to eq(new_admin_genre_path)
       fill_in("Name", :with => 'Drama')
-      
-      click_on "Create"
+
+      click_on "Create Genre"
       expect(current_path).to eq(genres_path)
     end
   end
