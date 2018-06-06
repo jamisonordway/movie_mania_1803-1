@@ -6,7 +6,10 @@
     <p><%= movie.description %></p>
     <h2>Awards for this Movie: </h2>
 
-    <p> movie.awards </p>
+    <% movie.movie_awards.each do |award| %>
+    <%= award.year %>
+    <% end %>
+
     <%= button_to 'Add this movie to cart', carts_path(movie_id: movie.id) %>
   </div>
 <% end %>
