@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
+  post '/awards', to: 'awards#index'
 
   resources :users, only: [:new, :show, :index, :create]
   resources :movies, only: [:index]
@@ -13,11 +14,11 @@ Rails.application.routes.draw do
   end
 
   resources :actors, only: [:new, :create, :index]
-  resources :awards, only: [:index, :show]
-  
+  resources :awards
+
   namespace :admin do
     resources :categories, only: [:index]
-    resources :awards
+    resources :awards, only: [:create]
   end
 
   resources :carts, only: [:create]

@@ -13,9 +13,9 @@ describe 'User visits award show' do
       movie_award_1 = movie_1.movie_awards.create!(award_id: award_1.id, movie_id: movie_1.id, year: '2009')
       movie_award_2 = movie_2.movie_awards.create!(award_id: award_1.id, movie_id: movie_2.id, year: '2010')
 
-      
+
       visit award_path(award_1)
-      save_and_open_page
+  
 
       expect(page).to have_content(movie_1.title)
       expect(page).to have_content(movie_2.title)
