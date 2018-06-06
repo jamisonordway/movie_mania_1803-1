@@ -7,11 +7,15 @@ describe 'user_index' do
     movie_2 = Movie.create!(title: "Boss Baby", description: "A baby is a boss.", director_id: director.id)
     movie_3 = Movie.create(title: "Catch Me If You Can", description: "Boy becomes expert in check fraud", director: director)
     award_1 = Award.create(name: 'Best')
-    aware_2 = Award.create(name: 'Worst')
+    award_2 = Award.create(name: 'Worst')
+    award_3 = Award.create(name: 'just mediocre')
     movie_award_1 = movie_1.movie_awards.create(award_id: award_1.id, movie_id: movie_1.id, year: '2009')
+    movie_award_2 = movie_2.movie_awards.create(award_id: award_2.id, movie_id: movie_2.id, year: '2010')
+    movie_award_3 = movie_1.movie_awards.create(award_id: award_3.id, movie_id: movie_1.id, year: '2011')
+    movie_award_4 = movie_2.movie_awards.create(award_id: award_3.id, movie_id: movie_2.id, year: '2011')
 
     visit '/movies'
-    save_and_open_page
+
     #binding.pry
     expect(page).to have_content(movie_1.title)
     expect(page).to have_content(movie_1.description)
