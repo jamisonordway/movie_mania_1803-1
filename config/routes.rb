@@ -13,9 +13,11 @@ Rails.application.routes.draw do
   end
 
   resources :actors, only: [:new, :create, :index]
-
+  resources :awards, only: [:index, :show]
+  
   namespace :admin do
     resources :categories, only: [:index]
+    resources :awards
   end
 
   resources :carts, only: [:create]

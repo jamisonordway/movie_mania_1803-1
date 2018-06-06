@@ -1,0 +1,7 @@
+<h1>All Awards</h1>
+
+<% @awards.each do |award| %>
+<%= award.name %>
+<% end %>
+
+<%= link_to "Create an Award", new_admin_award_path %>

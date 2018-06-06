@@ -194,7 +194,9 @@
         null,
         null,
         1,
+        1,
         null,
+        1,
         1,
         1,
         null,
@@ -204,6 +206,33 @@
       ],
       "/Users/jamisonordway/Desktop/turing/2module/final/movie_mania_1803-1/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/Users/jamisonordway/Desktop/turing/2module/final/movie_mania_1803-1/spec/features/admin_sees_new_award_form_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/jamisonordway/Desktop/turing/2module/final/movie_mania_1803-1/spec/features/user_can_add_movies_to_cart_spec.rb": [
@@ -521,6 +550,21 @@
         1,
         null
       ],
+      "/Users/jamisonordway/Desktop/turing/2module/final/movie_mania_1803-1/spec/models/award_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/jamisonordway/Desktop/turing/2module/final/movie_mania_1803-1/app/models/award.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/jamisonordway/Desktop/turing/2module/final/movie_mania_1803-1/spec/models/cart_spec.rb": [
         1,
         null,
@@ -558,11 +602,11 @@
         1,
         null,
         1,
-        48,
+        51,
         null,
         null,
         1,
-        35,
+        37,
         null,
         null,
         1,
@@ -603,6 +647,7 @@
         1,
         2,
         2,
+        2,
         null,
         null,
         1,
@@ -620,6 +665,9 @@
         1,
         1,
         1,
+        1,
+        1,
+        null,
         null,
         1,
         null,
@@ -673,7 +721,7 @@
         1,
         null,
         1,
-        45,
+        48,
         null,
         null,
         1,
@@ -684,7 +732,7 @@
         null,
         null,
         1,
-        2,
+        4,
         null,
         null
       ],
@@ -701,7 +749,19 @@
         1,
         null,
         1,
+        4,
+        null,
+        null
+      ],
+      "/Users/jamisonordway/Desktop/turing/2module/final/movie_mania_1803-1/app/controllers/admin/awards_controller.rb": [
+        1,
+        null,
+        1,
         2,
+        null,
+        null,
+        1,
+        1,
         null,
         null
       ],
@@ -850,8 +910,14 @@
         2,
         null,
         null
+      ],
+      "/Users/jamisonordway/Desktop/turing/2module/final/movie_mania_1803-1/app/models/movie_award.rb": [
+        1,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1528296691
+    "timestamp": 1528299019
   }
 }
