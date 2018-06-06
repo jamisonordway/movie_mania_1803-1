@@ -19,7 +19,10 @@ describe "User visits award index page" do
       visit admin_awards_path
       click_on "Create an Award"
       fill_in('Name', :with => 'Best Comedy')
-      fill_in('Year', :with => '2009')
+      #save_and_open_page
+      click_on "Create Award"
+      expect(current_path).to eq(admin_awards_path)
+      expect(page).to have_content('Best Comedy')
     end
   end
 end
