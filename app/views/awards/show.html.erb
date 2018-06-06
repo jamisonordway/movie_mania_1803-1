@@ -1,1 +1,7 @@
 <h1><%= @award.name %></h1>
+
+<p>All movies with this award: </p>
+<% @movie_awards.each do |movie| %>
+<%= movie.title %>
+<%= movie.year %>
+<% end %>
